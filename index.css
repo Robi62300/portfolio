@@ -3,10 +3,17 @@ h1 {
     text-align: center;
 }
 
+.test {
+    background-color: #000;
+    color: #ff0000;
+    background-size: cover;
+}
+
 .menu {
     display: flex;
     padding: 0;
-    background-color: #ccc;
+    background-color: #000000;
+    justify-content: right;
 }
 
 .menu li {
@@ -16,4 +23,29 @@ h1 {
 .menu a {
     display: block;
     min-width: 120px;
+
+    margin: 0.5rem;
+    padding: 0.3rem 0;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: #fd0101;
+    text-decoration: none;
+    border: 2px solid #fd0101;
+    border-radius: 20px;
+    transition: all 0.5s;
 }
+
+.menu a.actif {
+    background-color: #000;
+    color: #ffffff;
+    border-color: #ff0000;
+}
+
+.menu a:hover,
+.menu a:hover.actif {
+    background-color: #002fff;
+    color: #ffe843;
+    border-color: #ffe843;
+}
+
+/* commentaire */
