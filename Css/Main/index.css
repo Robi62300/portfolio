@@ -1,0 +1,22 @@
+ main {
+     min-height: 90vh;
+     background: url(/Image/image.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     min-height: 90vh;
+ }
+
+ #grid {
+     display: grid;
+     height: 100px;
+     grid-template-rows: 1fr 30px 1fr;
+ }
+
+ #areaA {
+     background-color: lime;
+ }
+
+ #areaB {
+     background-color: yellow;
+ }
