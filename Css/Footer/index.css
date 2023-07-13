@@ -1,5 +1,38 @@
 footer {
-    background-color: black;
-    height: 5vh;
+    height: 10vh;
     width: 100%;
+    background-color: #7b9e89;
+    position: absolute;
+    align-self: end;
+    bottom: 0;
+
+}
+
+img {
+    height: 42px;
+    width: 42px;
+    align-content: center;
+    margin: 20px;
+    float: left;
+    font-size: 15px;
+    padding: 3px;
+}
+
+#mail {
+    align-content: center;
+    float: right;
+    margin: 20px;
+}
+
+#NumeroTel {
+    margin: 32px;
+    margin-left: 0px;
+    align-content: center;
+    float: left;
+    font-size: x-large;
+}
+
+#tel {
+    margin-right: 0px;
+
 }

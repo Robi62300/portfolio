@@ -1,22 +1,50 @@
  main {
-     min-height: 90vh;
-     background: url(/Image/image.jpg);
+     min-height: 80vh;
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
-     min-height: 90vh;
+     height: 80vh;
+     background-color: #0e1428;
  }
 
- #grid {
-     display: grid;
-     height: 100px;
-     grid-template-rows: 1fr 30px 1fr;
- }
 
  #areaA {
-     background-color: lime;
+     /* background-color: lime; */
+     text-align: center;
+     color: #f18805;
  }
 
  #areaB {
-     background-color: yellow;
+     /* background-color: yellow; */
+     text-align: center;
+     position: relative;
+     top: 40vh;
+     color: #f18805;
+ }
+
+ #areaA,
+ #areaB {
+     height: 40vh;
+     width: 100%;
+ }
+
+ #imageA {
+     height: max-content;
+     width: max-content;
+     position: relative;
+     top: 30vh;
+     margin: 0px;
+     padding: 0px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+ #imageB {
+     height: 100%;
+     width: 20vh;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-color: red;
  }

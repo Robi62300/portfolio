@@ -1,5 +1,14 @@
 body {
-     height: 100vh; 
-     display: grid; 
-     grid-template-rows: 1fr 8fr 1fr; 
+     background-color: #0e1428;
+     font-family: cursive;
+     margin: 0;
+     height: 100%;
+}
+
+a {
+     text-decoration: none;
+}
+
+li {
+     list-style: none;
 }

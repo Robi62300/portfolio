@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/Css/index.css" rel="stylesheet" type="text/css">
     <title> Accueil </title>
@@ -11,40 +12,51 @@
 
 <body>
     <header>
-        <ul class="menu">
-            <li>
-                <a href="Accueil.html" class="actif">Accueil</a>
-            </li>
-            <li>
-                <a href="Presentation.html">Présentation </a>
-            </li>
-            <li>
-                <a href="Realisation.html">Réalisation </a>
-            </li>
-        </ul>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">MAXIME</div>
+
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+
+                <!-- Utilisation de CHECKBOX -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- Le &#9776 est une entité à par pour le html pour dire qu'on utilise un hamburger -->
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+
+                    <li><a href="/Pages/Accueil.html" class="actif">Accueil</a></li>
+                    <li><a href="/Pages/Presentation.html" >Présentation</a></li>
+                    <li><a href="/Pages/Realisation.html">Réalisation</a></li>
+                    <li><a href="/Pages/Compétences.html">Compétences</a></li>
+                    <li><a href="/">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h1>BIENVENUE SUR MON PORTFOLIO</h1>
         <div id="grid">
-            <div id="areaA">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur doloribus laboriosam totam magnam
-                    alias sed, minus quisquam, consectetur quidem distinctio ducimus error dolore
-                    soluta ipsam? Adipisci exercitationem unde architecto voluptate.</p>
-            </div>
+            <img id="imageA" src="/Image/bureau3.jpg">
             <div id="areaB">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus a autem, expedita doloribus
                     recusandae eligendi explicabo iste sint facilis assumenda
                     eveniet hic quos esse est ipsa rerum distinctio, cupiditate nobis.</p>
             </div>
-            <div id="imageA"></div>
+
         </div>
 
     </main>
-
     <footer>
-
+        <a href="https://twitter.com/Robi_ow"><img src="/Pages/square-twitter.svg"></a>
+        <a href="https://fr.linkedin.com/"><img src="/Pages/linkedin.svg"></a>
+        <img id="tel" src="/Pages/phone-solid.svg">
+        <span id="NumeroTel">+(33)6.xx.xx.xx.xx</span>
+        <a href="mailto:maxime.damb62@hotmail.fr"><img id="mail" src="/Pages/envelope-solid.svg"></a>
     </footer>
 
 </body>
+
 
 </html>
