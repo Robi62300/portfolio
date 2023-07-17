@@ -8,7 +8,7 @@ footer {
 
 }
 
-img {
+.Accueil {
     height: 42px;
     width: 42px;
     align-content: center;
@@ -19,9 +19,12 @@ img {
 }
 
 #mail {
+    height: 42px;
+    width: 42px;
     align-content: center;
     float: right;
     margin: 20px;
+    padding: 3px;
 }
 
 #NumeroTel {
@@ -30,9 +33,4 @@ img {
     align-content: center;
     float: left;
     font-size: x-large;
-}
-
-#tel {
-    margin-right: 0px;
-
 }

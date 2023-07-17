@@ -1,21 +1,43 @@
  main {
      min-height: 80vh;
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
      height: 80vh;
+     width: 100vw;
+     overflow: hidden;
      background-color: #0e1428;
  }
 
+ .wrapper {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 10px;
+     grid-auto-rows: min-content(100px, auto);
+ }
+
+ .two {
+     grid-column: 2/3;
+     grid-row: 1;
+ }
+
+ .one {
+     grid-column: 1/3;
+     grid-row: 1;
+ }
+
+ #ParagrapheAccueil {
+     text-align: center;
+     position: relative;
+     top: 10vh;
+     color: #f18805;
+     width: 100%;
+     height: 100%;
+ }
 
  #areaA {
-     /* background-color: lime; */
      text-align: center;
      color: #f18805;
  }
 
  #areaB {
-     /* background-color: yellow; */
      text-align: center;
      position: relative;
      top: 40vh;
@@ -32,8 +54,8 @@
      height: max-content;
      width: max-content;
      position: relative;
-     top: 30vh;
-     margin: 0px;
+     top: 25vh;
+     margin: 10px;
      padding: 0px;
      background-size: cover;
      background-repeat: no-repeat;
@@ -42,9 +64,13 @@
 
  #imageB {
      height: 100%;
-     width: 20vh;
+     width: 20%;
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
      background-color: red;
+ }
+
+ #Accueil {
+     width: 100%;
  }

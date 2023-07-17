@@ -1,6 +1,6 @@
-h1 {
-    color: #d95d39;
-    text-align: center;
+header {
+    height: 10vh;
+    width: 100vw;
 }
 
 /* NAVBAR STYLING STARTS */
