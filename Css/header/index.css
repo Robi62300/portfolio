@@ -29,11 +29,11 @@ header {
     font-size: 18px;
 }
 
-.menu a.actif {
+/* .menu a.actif {
     background-color: #000;
     color: #1abc9c;
     border-color: #1abc9c;
-}
+} */
 
 .menu li:hover {
     background-color: #4c9e9e;
