@@ -1,6 +1,6 @@
 footer {
     height: 10vh;
-    width: 100%;
+    width: 100vw;
     background-color: #7b9e89;
     position: absolute;
     align-self: end;
@@ -33,4 +33,43 @@ footer {
     align-content: center;
     float: left;
     font-size: x-large;
+}
+
+@media (max-width: 768px) {
+    footer {
+        height: 10vh;
+        width: 100vw;
+        background-color: #7b9e89;
+        position: absolute;
+        align-self: end;
+        bottom: 0;
+
+    }
+
+    .Accueil {
+        height: 21px;
+        width: 21px;
+        align-content: center;
+        margin: 15px;
+        float: left;
+        font-size: 8px;
+        padding: 3px;
+    }
+
+    #mail {
+        height: 21px;
+        width: 21px;
+        align-content: center;
+        float: right;
+        margin: 18px;
+        padding: 3px;
+    }
+
+    #NumeroTel {
+        margin: 18px;
+        margin-left: 0px;
+        align-content: center;
+        float: left;
+        font-size: small;
+    }
 }
