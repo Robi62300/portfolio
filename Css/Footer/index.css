@@ -47,8 +47,8 @@ footer {
     }
 
     .Accueil {
-        height: 21px;
-        width: 21px;
+        height: 6vh;
+        width: 5vh;
         align-content: center;
         margin: 15px;
         float: left;
@@ -57,8 +57,8 @@ footer {
     }
 
     #mail {
-        height: 21px;
-        width: 21px;
+        height: 6vh;
+        width: 6vh;
         align-content: center;
         float: right;
         margin: 18px;
@@ -67,9 +67,9 @@ footer {
 
     #NumeroTel {
         margin: 18px;
-        margin-left: 0px;
+        margin-top: 40px;
         align-content: center;
         float: left;
-        font-size: small;
+        font-size: x-large;
     }
 }

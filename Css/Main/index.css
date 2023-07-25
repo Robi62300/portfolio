@@ -135,10 +135,11 @@
          display: grid;
          height: 80vh;
          grid-template-columns: repeat(3, 1fr);
-         grid-auto-rows: repeat(1, 1fr);
+         grid-auto-rows: repeat(2, 1fr);
          grid-template-areas:
              " .    img   ."
              "test test test"
+             " .     .    ."
          ;
          justify-content: center;
          max-width: 100vw;
