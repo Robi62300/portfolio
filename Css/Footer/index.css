@@ -2,37 +2,44 @@ footer {
     height: 10vh;
     width: 100vw;
     background-color: #7b9e89;
-    position: absolute;
-    align-self: end;
+    position: absolute; 
+    align-self: end; 
     bottom: 0;
 
 }
 
 .Accueil {
-    height: 42px;
-    width: 42px;
+    position: relative;
+    top: 1vh;
+    height: 40px;
+    width: 40px;
     align-content: center;
-    margin: 20px;
+    margin: 10px;
     float: left;
     font-size: 15px;
     padding: 3px;
 }
 
 #mail {
+    position: relative;
+    top: 2vh;
     height: 42px;
     width: 42px;
     align-content: center;
     float: right;
-    margin: 20px;
+    margin-right: 10px;
     padding: 3px;
 }
 
 #NumeroTel {
-    margin: 32px;
+    position: relative;
+    top: 3vh;
     margin-left: 0px;
+    margin-bottom: 0px;
     align-content: center;
     float: left;
     font-size: x-large;
+    font-family: Valo;
 }
 
 @media (max-width: 768px) {
@@ -47,29 +54,67 @@ footer {
     }
 
     .Accueil {
+        position: relative;
         height: 6vh;
         width: 5vh;
         align-content: center;
-        margin: 15px;
         float: left;
         font-size: 8px;
-        padding: 3px;
     }
 
     #mail {
-        height: 6vh;
-        width: 6vh;
+        position: relative;
+        top: 0.5vh;
+        height: 7vh;
+        width: 7vh;
         align-content: center;
         float: right;
-        margin: 18px;
-        padding: 3px;
     }
 
     #NumeroTel {
-        margin: 18px;
-        margin-top: 40px;
+        position: relative;
+        top: 2.5vh;
         align-content: center;
         float: left;
         font-size: x-large;
+    }
+}
+
+@media (max-width: 425px) {
+    footer {
+        height: 10vh;
+        width: 100vw;
+        background-color: #7b9e89;
+        position: absolute;
+        align-self: end;
+        bottom: 0;
+
+    }
+
+    .Accueil {
+        position: relative;
+        height: 6vh;
+        width: 3vh;
+        align-content: center;
+        float: left;
+        font-size: 8px;
+    }
+
+    #mail {
+        position: relative;
+        top: 1vh;
+        height: 6vh;
+        width: 3vh;
+        margin-left: 0;
+        align-content: center;
+        float: right;
+    }
+
+    #NumeroTel {
+        position: relative;
+        top: 4vh;
+        align-content: center;
+        float: left;
+        font-size: small;
     }
 }

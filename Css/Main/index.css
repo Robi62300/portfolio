@@ -24,30 +24,60 @@
  #ImageBureau {
      width: 100%;
      height: 100%;
-     /* object-fit: cover; */
+     object-fit: cover;
+ }
+
+ #imageB {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     background-color: #f18805;
  }
 
  .image {
      grid-area: img;
+ }
 
+ .ImageProfil {
+     grid-area: imgP;
  }
 
  .text {
      display: flex;
      grid-area: test;
      color: #f18805;
-     text-align: center;
      margin: 0;
      align-items: center;
+     text-align: center;
+     font-family: Valo;
+ }
+
+ .titrep {
+     display: flex;
+     grid-area: titrep;
+     text-align: center;
+     color: #d95d39;
+     font-size: xx-large;
+     justify-content: flex-end;
+     align-content: stretch;
+     flex-wrap: wrap;
+     flex-direction: column;
+     align-items: stretch;
+     font-family: Valo;
  }
 
  .GridDeux {
      display: grid;
-     grid-template-rows: 1fr 1fr 1fr;
-     grid-template-columns: repeat(3, 1fr);
-     grid-gap: 10px;
-     justify-content: center;
      height: 90vh;
+     max-width: 100vw;
+     grid-template-rows: minmax(100px, auto);
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-areas:
+         " imgP titrep  titrep"
+         " .    textp   textp"
+         " .      .       ."
+     ;
+     justify-content: center;
      z-index: 1;
  }
 
@@ -64,27 +94,14 @@
  }
 
  .PresentationParagraphe {
-     grid-column-start: 1;
-     grid-column-end: 4;
-     grid-row: 2;
- }
-
- #Presentation {
-     text-align: justify;
-     position: relative;
-     top: 0vh;
-     right: 10vh;
      color: #f18805;
+     grid-area: textp;
+     text-align: center;
+     font-family: Valo;
+     font-size-adjust: initial;
+
  }
 
- #imageB {
-     height: 30vh;
-     width: 30vh;
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-color: red;
- }
 
  .CSS {
      grid-column: 1;

@@ -1,5 +1,13 @@
-@import url(Reset/index.css); 
+@import url(Reset/index.css);
 @import url(header/index.css);
 @import url(Main/index.css);
 @import url(Body/index.css);
 @import url(Footer/index.css);
+
+@font-face {
+    font-family: Valo;
+    src: url("../Font/Valorant_Font.ttf") format('truetype'),
+        url("Font\Valorant_Font.eot") format('eot'),
+        url("Font\Valorant_Font.woff") format('woff'),
+        url("Font\Valorant_Font.woff2") format('woff2');
+}

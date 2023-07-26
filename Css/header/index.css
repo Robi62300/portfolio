@@ -3,15 +3,18 @@ header {
     width: 100vw;
 }
 
+
+
+
 /* NAVBAR STYLING STARTS */
 .navbar {
     display: flex;
+    height: 10vh;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
     background-color: #7b9e89;
-    color: #fff;
-    /* font-family: 'Times New Roman', Times, serif ; */
+    color: #ffffff;
+    z-index: 2;
 }
 
 .nav-links a {
@@ -21,6 +24,8 @@ header {
 /* LOGO */
 .logo {
     font-size: 32px;
+    margin-left: 10px;
+    font-family: Valo;
 }
 
 /* NAVBAR MENU */
@@ -28,7 +33,7 @@ header {
     display: flex;
     gap: 1em;
     font-size: 18px;
-    z-index: 4;
+    font-family: Valo;
 }
 
 /* .menu a.actif {
