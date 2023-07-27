@@ -6,6 +6,14 @@
      background-color: #0e1428;
  }
 
+ .h1presentation {
+     position: relative;
+     top: 7vh;
+     text-align: center;
+     font-size: xx-large;
+     color: #d95d39;
+ }
+
  .Grid {
      display: grid;
      height: 80vh;
@@ -49,7 +57,6 @@
      margin: 0;
      align-items: center;
      text-align: center;
-     font-family: Valo;
  }
 
  .titrep {
@@ -63,7 +70,6 @@
      flex-wrap: wrap;
      flex-direction: column;
      align-items: stretch;
-     font-family: Valo;
  }
 
  .GridDeux {
@@ -81,71 +87,57 @@
      z-index: 1;
  }
 
- .GridTrois {
-     position: relative;
-     display: grid;
-     grid-template-rows: repeat(3, 1fr);
-     grid-template-columns: repeat(3, 1fr);
-     grid-gap: 10px;
-     justify-content: center;
-     height: 90vh;
-     width: 100vw;
-     z-index: 1;
- }
-
  .PresentationParagraphe {
      color: #f18805;
      grid-area: textp;
      text-align: center;
-     font-family: Valo;
      font-size-adjust: initial;
-
  }
 
-
- .CSS {
-     grid-column: 1;
-     grid-row: 3;
-     top: 13vh;
-     align-self: center;
-     color: aliceblue;
-     position: absolute;
-
+ /*!  Barre de progression  */
+ :root {
+     --progress: #ff3300;
+     --success: #00b894;
  }
 
- .HTML {
-     grid-column: 1;
-     grid-row: 1;
-     top: 13vh;
+ .progressbar-wrapper {
+     background-color: #ffffff;
      color: rgb(255, 255, 255);
-     position: absolute;
-
+     border-radius: 15px;
+     width: 100%;
  }
 
- .PHP {
-     grid-column: 1;
-     grid-row: 2;
-     font-size: 15px;
-     top: 13vh;
-     color: aliceblue;
-     position: absolute;
-
+ .progressbar {
+     background-color: var(--progress);
+     color: rgb(255, 255, 255);
+     padding: 1rem;
+     text-align: right;
+     font-size: 20px;
+     border-radius: 15px;
  }
 
- .longeur {
-     position: absolute;
-     height: 20px;
-     width: 400px;
-     border: 1px solid gray;
+ .progressbar[title="dowloaded"] {
+     background-color: var(--progress);
  }
 
- .longeur::-webkit-progress-bar {
-     background-color: white;
+ .progressbar[title="dowloading"] {
+     background-color: var(--success);
  }
 
- .longeur::-webkit-progress-value {
-     background-color: rgb(255, 0, 0);
+ .css {
+     width: 100%;
+     margin: 10vh 0;
  }
+
+ .html {
+     width: 50%;
+ }
+
+ .php {
+     width: 25%;
+ }
+
+ /*! Responsive  */
 
  @media (max-width: 768px) {
      .Grid {

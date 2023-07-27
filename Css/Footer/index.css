@@ -39,7 +39,6 @@ footer {
     align-content: center;
     float: left;
     font-size: x-large;
-    font-family: Valo;
 }
 
 @media (max-width: 768px) {
